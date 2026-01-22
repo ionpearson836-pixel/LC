@@ -103,7 +103,7 @@
 
 * [How to Choose Next-Cart Migration Service Model](choosing-the-right-migration-service/how-to-choose-next-cart-migration-service-model.md)
 * [Entity Points Explained: How Migration Scope Is Measured](choosing-the-right-migration-service/entity-points-explained-how-migration-scope-is-measured.md)
-* [When Custom Job Is Required: Common Real-World Scenarios](choosing-the-right-migration-service/when-custom-job-is-required-common-real-world-scenarios.md)
+* [When Custom Job Is Required: Common Scenarios](choosing-the-right-migration-service/when-custom-job-is-required-common-real-world-scenarios.md)
 * [Matching Your Needs to the Right Service](choosing-the-right-migration-service/matching-your-needs-to-the-right-service.md)
 
 ## Post-Migration and Quality Assurance

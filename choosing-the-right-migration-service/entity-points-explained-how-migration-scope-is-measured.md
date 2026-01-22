@@ -1,38 +1,36 @@
 # Entity Points Explained: How Migration Scope Is Measured
 
-Migration pricing often fails beginners for one reason: simple counts do not reflect real effort.
+Migration pricing often feels confusing because raw counts can be misleading. Two stores might have the same number of products, but the effort and risk can be very different once you factor in order history, customer records, and how much “connected data” needs to stay consistent after the move.
 
-Two stores can have the same number of products, but very different workload and risk. A store with deep order history, heavy relationships, and more content usually requires more processing and validation than a store with similar product volume but limited history.
+Next-Cart uses **Entity Points** to make migration scope easier to estimate and easier to compare across stores.
 
-That is why Next-Cart uses **Entity Points**.
+### What are Entity Points?
 
-#### What are Entity Points
+**Entity Points** are a weighted method of measuring migration scope based on four core data types that drive most migration workload:
 
-Entity Points are Next-Cart’s weighted way of measuring migration scope based on the four most important data types:
+* Products
+* Orders
+* Blog posts
+* Customers
 
-* **Products**
-* **Orders**
-* **Blog Posts**
-* **Customers**
+Instead of treating every record as equal, Entity Points apply different weights to reflect real-world complexity.
 
-Instead of treating each entity type as equal, Entity Points apply weights to reflect effort and risk.
+### How Entity Points are calculated
 
-#### **The Entity Points formula**
-
-Each core entity type has a coefficient (weight):
+Each core entity type has a coefficient:
 
 * Products: **1.0**
 * Orders: **0.8**
-* Blog Posts: **0.6**
+* Blog posts: **0.6**
 * Customers: **0.5**
 
-{% code overflow="wrap" fullWidth="true" %}
+{% code overflow="wrap" fullWidth="false" %}
 ```
-Entity Points = (Products × 1.0) + (Orders × 0.8) + (Blog Posts × 0.6) + (Customers × 0.5)
+Entity Points = (Products × 1.0) + (Orders × 0.8) + (Blog posts × 0.6) + (Customers × 0.5)
 ```
 {% endcode %}
 
-**Example calculation**
+#### **Example calculation**
 
 If your store has:
 
@@ -44,75 +42,64 @@ If your store has:
 Entity Points = (500 × 1.0) + (600 × 0.8) + (100 × 0.6) + (100 × 0.5)\
 \= **1,090 Entity Points**
 
-That total is what you use to choose the plan that fits the size of a migration run.
+That total helps you choose an Entity Points plan sized for a single migration run.
 
-#### What counts, and what does not
+### What Entity Points include and what they do not
 
 A common misconception is that Entity Points represent everything that migrates. They do not.
 
-Entity Points are a sizing method based on the “big four” core entities. Many supporting data structures can still be migrated as part of service scope but do not increase the Entity Points calculation, such as:
+Entity Points are a sizing method based on the “big four” drivers. Supporting data may still be migrated as part of scope (depending on platform support), but it does not increase the Entity Points calculation.
 
-* Categories and subcategories
-* Product images (main, gallery, in-description images)
-* Reviews and ratings
-* Manufacturers and brands
-* Coupons and discount codes
-* Taxes and tax rules
-* Customer groups and segmentation fields (where supported)
+This distinction matters because many migration challenges come from “behavior continuity”, not just “data presence”.
 
-A practical way to remember this: Entity Points help size the major workload drivers, not charge separately for every supporting element.
+For example, carrying over data tied to third-party systems or custom fields often requires more planning than standard catalog records.
 
-#### **Next-Cart's Entity Points Plan Pricing**
+If you are unsure whether your store falls into that category, **When Custom Job Is Required: Common Real-World Scenarios** is the best place to confirm what usually needs customization.
 
-#### **Crucial Information You Need to Focus**
+### Entity Points plans are licensed for a specific platform pairing
 
-Your Migration Service and Entity Points Plan are specifically licensed for one distinct platform pairing (Source → Target).
+Your Migration Service and Entity Points Plan apply to a specific direction:
 
-This means the powerful migration solution you purchase from Next-Cart is tailored for the specific platforms you select.
+**Source → Target**
 
-_Let's look at an example:_
+For example, a plan purchased for **Shopify → WooCommerce** applies only to that direction. It cannot be reused for **WooCommerce → Shopify** or for a different target platform.
 
-Imagine you choose the **Standard Migration Service** and the **Pro+ Entity Points Plan** to move your data from **Shopify** to **WooCommerce**.
+This is one of the reasons Next-Cart recommends validating early. If you want to confirm how key entities map in your exact platform pairing, **Demo Migration: What It Proves and How to Read Results** is often the fastest starting point.
 
-* **The Licensed Migration Pair**: Shopify → WooCommerce
-* **The Entity Points Plan**: Pro+, handles up to 1,024,000 Entity Points
-* **The Migration Service**: Standard
+### Entity Points apply per migration run
 
-_What does this mean for you?_
+Entity Points apply per individual migration run. They are not a lifetime pool that gets consumed.
 
-Your purchase authorizes data migration only in that **specific direction (Shopify** to WooCommerce). It cannot be used for **reverse migration** (WooCommerce to Shopify) or applied to a completely **different pair** (e.g., Shopify to Shift4Shop, Shopify to Magento, etc.).
+This matters because many projects follow a pattern like:
 
-To initiate a migration for a new platform pairing, you will need to acquire a separate Migration Service and Entity Points Plan dedicated to that specific new pair.
+* Full Migration first, then
+* one or more **Recent Data Migrations** closer to go-live to sync newer orders, customers, or products
 
-#### A critical detail: Entity Points apply per migration run
-
-Entity Points are a limit per individual migration run, not a lifetime pool that gets consumed.
-
-This matters if you run:
-
-* A Full Migration, then
-* One or more **Recent Data Migrations** to sync new orders, customers, or products before go-live
-
-You can run Recent Data Migration multiple times during your schedule, as long as each run stays within your plan’s Entity Points.
+You can run Recent Data Migration multiple times as long as each run stays within your plan’s Entity Points. If you are planning a launch window and want to avoid gaps in recent orders or customer activity, **Recent Data Migration: Final Sync Before Go-live** explains how teams typically handle that final synchronization.
 
 #### How pricing scales for extremely large migrations
 
-For very large migrations, additional upgrade logic can apply.
+For very large migration runs, additional upgrade logic can apply.
 
 If a plan surpasses **1,024,000 Entity Points**, an additional **$50** is charged for each extra **100,000 Entity Points**.
 
-#### Best practices for accurate sizing
+### Best practices for accurate sizing
 
-* Use admin totals, not guesses
-* Pull product, customer, order, and blog post counts from your current store
-* Treat Entity Points as a planning tool, not only a pricing number
-* Estimate Recent Data Migration separately, since it is typically much smaller than the full run
+A reliable Entity Points estimate comes from real store totals, not rough guesses:
 
-#### Conclusion
+* Pull product, customer, order, and blog post counts from your current admin
+* Treat Entity Points as a planning tool, not just a pricing number
+* Expect Recent Data Migration runs to be smaller than the full run in most cases
 
-Entity Points are designed to make migration scope predictable by reflecting effort and risk, not just raw counts.
+**Next-Cart insight**: scope surprises usually happen when stores have complex relationships (large order history, variant-heavy catalogs, or custom data behavior). That is why a demo-first approach is often the fastest way to reduce uncertainty before committing to a final plan.
 
-If you want the fastest way to confirm scope and reduce estimation errors, export your migration data or check the total entity through your store admin dashboard first, then use your real counts to choose a plan with confidence.
+### Conclusion
+
+Entity Points are designed to make migration scope predictable by reflecting workload and risk, not just raw counts. If you base the estimate on real admin totals, you can select a plan more confidently and avoid last-minute upgrades.
+
+If you want to confirm scope in a practical way, running a **Demo Migration** gives you an early view of how key entities map and what needs attention in validation. When the store is more complex or you want a clearer readout, you can also request an **assisted demo** by sharing a small sample dataset so the Next-Cart team can run the demo and provide a structured results summary.
+
+If questions come up while you are sizing scope or deciding how much help you need, **Live Chat** is the fastest way to get guidance on plan fit and whether Standard Migration, Managed Migration, or Custom Migration is the right match.
 
 #### FAQs
 
@@ -120,7 +107,9 @@ If you want the fastest way to confirm scope and reduce estimation errors, expor
 
 <summary><strong>Do images, categories, or reviews increase Entity Points?</strong></summary>
 
-No. Entity Points are calculated from products, orders, blog posts, and customers only. Supporting data may still be included in scope depending on platform support.
+No. Entity Points are calculated from products, orders, blog posts, and customers only.
+
+Supporting data may still be included in scope depending on platform support, but it does not increase the Entity Points calculation.
 
 </details>
 
@@ -144,6 +133,6 @@ As a bonus, your 1-year license will be extended by an additional month, ensurin
 
 Next-Cart is a one-off payment model for your migration project, not a recurring monthly subscription.
 
-The migration service purchase will have a 1-year license with a 1-month extension when upgrading the Entity Point plan.
+The migration service purchase includes a 1-year license, with a 1-month extension when upgrading the Entity Points plan.
 
 </details>
