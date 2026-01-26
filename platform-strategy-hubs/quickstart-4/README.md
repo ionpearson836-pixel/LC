@@ -18,50 +18,30 @@ metaLinks:
     - /broken/spaces/EwOn3si2UOVRL65zVOMg/pages/luwYOn6Ufwa8n5aXiApj
 ---
 
-# Magneto Migration Hub
+# Magento Migration Hub
 
-Magento (Adobe Commerce / Magento Open Source) is often chosen for sophisticated catalog structure, enterprise flexibility, and complex merchandising needs. Migration planning typically becomes about preserving meaning: how product types behave, how configurations are modeled, and how the catalog supports real purchasing workflows.
+Magento (Adobe Commerce) is a powerful platform commonly chosen for deep catalog control, complex product types, and multi-store/multi-locale scope management. Magento migrations are highly successful when teams treat **attributes**, **attribute sets**, **scope**, and **product type behavior** as primary deliverables, because those elements drive discovery, storefront behavior, and operational usability.
 
-### Magento at a glance
+#### What Magento is good at (in a migration context)
 
-**Core capabilities**
+* **Product types that represent buying behavior**, which matters when ensuring migrated products “work” as intended.
+* **Attribute-driven catalog structure**, shaping discovery, filtering, and how products are configured.
+* **Multi-store scope under one installation**, which impacts how catalog and content vary across storefront contexts.
+* **URL rewrites and SEO continuity tooling**, but only when mapping is planned and tested early.
 
-* Multiple product types designed for complex catalogs
-* Strong structure for configurable buying scenarios and merchandising
-* Powerful platform for stores that require complex operations
+#### What changes in a migration, at a glance
 
-Magento supports multiple product types including simple, configurable, virtual, downloadable, bundle, and grouped.
+* **Product type behavior:** products can exist but fail to behave correctly if type logic is mis-modeled.
+* **Attributes and attribute sets:** these define what fields exist and how discovery works, so they must be standardized and validated early.
+* **Multi-store scope:** scope decisions affect each storefront separately and must be validated per context.
+* **SEO and redirects:** URL mapping is achievable but requires deliberate planning and early testing.
+* **Search and discovery dependencies:** attribute quality impacts search and filtering outcomes in Magento workflows.
 
-**Typical strengths**
-
-* Strong for stores with complex catalogs and structured merchandising needs
-* Good for teams that need deep control and can support a more involved platform
-
-**Common complexity drivers**
-
-* Product type behavior and how it translates across platforms
-* Multi-store and multi-context scope decisions
-* SEO continuity planning and URL behavior
-
-### What tends to matter most in Magento migrations
-
-#### Product type behavior
-
-Magento product types represent buying behavior, not just data structure. If the target platform models these behaviors differently, you can end up with products that exist but do not behave correctly. Plan to validate behavior early for configurable, grouped, and bundle-driven catalog segments.
-
-#### Catalog complexity concentration
-
-Magento catalogs often contain a small subset of highly complex products that drive disproportionate migration risk. Your demo sample should include those products, not just a random slice.
-
-#### SEO and URL continuity
-
-Magento migrations are often SEO-sensitive. Even when SEO continuity is achievable, it requires deliberate mapping and validation of priority URLs.
-
-### How Next-Cart helps you reduce uncertainty
+#### How Next-Cart helps you reduce uncertainty
 
 Next-Cart helps you validate Magento-specific risk early: product type behavior, complex catalog segments, and the acceptance criteria your team will use for approval. The goal is to avoid discovering structural mismatches late, when fixes become expensive and disruptive.
 
-### Conclusion
+#### Conclusion
 
 Magento is often the right target when your store needs sophisticated catalog behavior and enterprise-grade flexibility. Migration success depends on proving that your most complex products behave correctly and that your approval criteria reflect real workflows, not only record totals. When you validate behavior early and align your scope with the outcomes your store requires, you reduce rework and protect launch readiness.
 
@@ -100,5 +80,13 @@ Magento supports multiple product types, and those product types define buying b
 Yes. Next-Cart supports migrating invoices, shipments, and credit memos to Magento.
 
 For planning, treat this as an operational continuity requirement and validate a representative slice early.
+
+</details>
+
+<details>
+
+<summary><strong>Why do Magento migrations often “pass counts” but fail discovery?</strong></summary>
+
+Because discovery depends on attribute quality, attribute sets, and search configuration, not only record counts.
 
 </details>

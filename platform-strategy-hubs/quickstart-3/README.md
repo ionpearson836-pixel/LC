@@ -23,44 +23,28 @@ metaLinks:
 
 BigCommerce is a hosted platform often chosen by teams that want a structured catalog model and a commerce system that scales without managing infrastructure. Migration planning is frequently about catalog behavior: variant structure, option modeling, and the storefront experience for complex products.
 
-### BigCommerce at a glance
+#### What BigCommerce is good at (in a migration context)
 
-**Core capabilities**
+* **Structured catalog complexity** where products, variants, and storefront behavior must remain consistent at scale.
+* **Clear separation between true variants and modifier-style customizations**, which affects how migrated options should be modeled.
+* **Category trees and multi-storefront planning**, which impacts navigation outcomes after migration.
+* **Redirect support**, but only when URL mapping is treated as an early deliverable, not a late cleanup task.
 
-* Hosted commerce platform with strong catalog and operational foundations
-* Variant modeling for products that have purchasable option combinations
-* Support for structured product imports and catalog management
+#### What changes in a migration, at a glance
 
-**Typical strengths**
+* **Catalog structure:** how options become purchasable variants vs non-inventory customizations is a key friction point.
+* **Category and navigation strategy:** category trees should reflect real browsing outcomes, not unlimited tagging.
+* **SEO continuity:** redirects work best when priority URL mapping is planned early and validated before launch.
+* **Throughput and sequencing:** large catalogs and integration-heavy stores are sensitive to timing and API throughput planning.
+* **Discovery behavior:** filtering and attributes often require explicit planning and validation because they shape how customers find products.
 
-* Good for stores that want a hosted platform with a structured product model
-* Strong for teams that want predictable operations and platform-managed infrastructure
+#### How Next-Cart helps you reduce uncertainty
 
-**Common complexity drivers**
+BigCommerce migrations go smoother when you validate catalog meaning early, especially for complex variants, modifiers, and category assignments. A Demo Migration with a representative sample is the fastest way to confirm how real products translate before committing to full execution.
 
-* Variant scale and the structure of option combinations
-* Catalog behavior on complex products
-* SEO continuity planning
+#### Conclusion
 
-BigCommerce documentation states that each product can have a maximum of **600 variants**.
-
-### What tends to matter most in BigCommerce migrations
-
-#### Variant structure and option modeling
-
-BigCommerce supports variant-driven catalogs, but complexity increases when your option structure creates large variant grids. Even if your store fits within platform limits, you still want to confirm that the storefront behaves as expected for your most complex products.
-
-#### Proof-first validation for complex products
-
-BigCommerce projects benefit from early validation of the buying model: how customers choose options, how availability is represented, and how complex products appear in the storefront.
-
-### How Next-Cart helps you reduce uncertainty
-
-Next-Cart helps you validate the buying model early and interpret demo results based on outcomes, not only counts. If complex products need restructuring or special handling, it is better to discover it during a demo than during go-live pressure.
-
-### Conclusion
-
-BigCommerce is often a strong target when you want a hosted platform with structured product modeling and predictable operations. Migration success depends on proving that your option and variant model produces the storefront outcomes you expect, especially for the products that drive the most revenue. When you validate complex products early and align acceptance criteria with real buying workflows, you avoid the common trap of “data moved” without “store ready”.
+BigCommerce is often a strong target when you want a hosted platform with structured product modeling and predictable operations. Migration success depends on proving that your option and variant model produce the storefront outcomes you expect, especially for the products that drive the most revenue. When you validate complex products early and align acceptance criteria with real buying workflows, you avoid the common trap of “data moved” without “store ready”.
 
 You can validate direction through a **Demo Migration result**, especially using your most option-heavy products. If you prefer, you can **ask Next-Cart to run the Demo Migration using your sample data** and review the findings with you. If your store is close to variant scale limits or has complex option behavior, **Live Chat** is the fastest way to scope what needs special handling and choose the safest service level.
 

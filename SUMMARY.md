@@ -76,7 +76,7 @@
   * [Choosing the Right Migration Approach for BigCommerce](platform-strategy-hubs/quickstart-3/choosing-the-right-migration-approach-for-bigcommerce.md)
   * [BigCommerce Validation Priorities: What to Verify Most Carefully](platform-strategy-hubs/quickstart-3/bigcommerce-validation-priorities-what-to-verify-most-carefully.md)
   * [Common BigCommerce Migration Pitfalls and Prevention](platform-strategy-hubs/quickstart-3/common-bigcommerce-migration-pitfalls-and-prevention.md)
-* [Magneto Migration Hub](platform-strategy-hubs/quickstart-4/README.md)
+* [Magento Migration Hub](platform-strategy-hubs/quickstart-4/README.md)
   * [Magento Fit: Who Magento is (and is not) good for](platform-strategy-hubs/quickstart-4/quickstart.md)
   * [Magento Data Model Differences: What Changes and Why It Matters](platform-strategy-hubs/quickstart-4/quickstart-1.md)
   * [Magento Constraints and Risk: What It Means, Who It Affects, Mitigation Paths](platform-strategy-hubs/quickstart-4/magento-constraints-and-risk-what-it-means-who-it-affects-mitigation-paths.md)
