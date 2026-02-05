@@ -11,7 +11,7 @@
   * [Shopping Cart Migration 101: Definition, Goals, and Outcomes](migration-fundamentals/quickstart/quickstart.md)
   * [When Is the Right Time to Change Platform?](migration-fundamentals/quickstart/quickstart-1.md)
   * [Migration Readiness Scorecard](migration-fundamentals/quickstart/quickstart-2.md)
-  * [Common Risks in E-commerce Migration](migration-fundamentals/quickstart/quickstart-3.md)
+  * [Common Risks in Shopping Cart Migration](migration-fundamentals/quickstart/quickstart-3.md)
 * [What You Need to Understand About Data Migration](migration-fundamentals/what-you-need-to-understand-about-data-migration/README.md)
   * [E-commerce Data Basics: Products, Customers, and Orders](migration-fundamentals/what-you-need-to-understand-about-data-migration/e-commerce-data-basics-products-customers-and-orders.md)
   * [Data Compatibility: What It Means and Why It Breaks](migration-fundamentals/what-you-need-to-understand-about-data-migration/data-compatibility-what-it-means-and-why-it-breaks.md)
