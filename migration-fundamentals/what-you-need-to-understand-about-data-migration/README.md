@@ -1,108 +1,158 @@
 # What You Need to Understand About Data Migration
 
-Most shopping cart migrations do not fail because records cannot be transferred. They fail because teams misunderstand what store data really includes, how it connects, and what “correct” should look like on the target cart.
+Most shopping cart migrations do not go wrong because records cannot be transferred. They go wrong because teams misunderstand what store data really includes, how it connects, and what “correct” should look like on the target platform.
 
-If you understand these fundamentals, you can scope your migration more accurately, choose the right service model, and validate outcomes with far less uncertainty.
+If you understand these fundamentals, you can scope your migration more accurately, choose the right approach, and validate outcomes with far less uncertainty.
 
-### Why data foundations matter
+### Why “store data” is more than a list of records
 
-A replatforming project fails when any of these happen:
+In eCommerce, most data is relational. A product record is not only a name and price. It often depends on connected structures that shape how customers shop and how teams operate.
+
+A migration becomes risky when any of these happen:
 
 * The target platform cannot represent part of your catalog structure the way the source did
 * Critical relationships break, such as orders that no longer connect cleanly to customers or products
-* A large portion of important store behavior is powered by apps or custom fields that were never accounted for
+* Important behavior is powered by apps, plugins, or custom fields that were never accounted for
 
-Data foundations reduce risk because they help you:
+The goal of migration planning is not “move everything.” The goal is “preserve business meaning.”
 
-* Identify your true scope, not just what is easy to count
-* Spot complexity drivers early, before the project is locked into a timeline
-* Build a validation plan that checks more than totals
+### The four core data types that drive most migration scope
 
-### The three pillars of store data
+Most migration planning starts with four core data types because they carry the bulk of operational continuity.
 
-Almost every store can be understood through three pillars:
+#### 1) Product data
 
-1. Product data
-2. Customer data
-3. Order data
+Product data is not just your catalog. It is your buying experience.
 
-These pillars are the core operational blueprint of the business. If they migrate cleanly and remain connected, your replatforming effort becomes far more predictable.
+Depending on your store, product scope may include:
 
-To go deeper on what each pillar includes, read **E-commerce Data Basics: Products, Customers, and Orders**.
+* product titles, descriptions, status, and visibility
+* images and media references
+* variants and options (the most common complexity driver)
+* SKUs, inventory, and pricing fields that influence purchasability
+* categories, collections, attributes, tags, and relationships that affect discovery
+* SEO fields tied to product visibility and traffic
 
-### The real challenge is not records, it is representation
+What matters most is whether customers can purchase the same “thing” in the way you intend. Record presence is not enough if buying behavior changes.
 
-Platforms do not store the same information in the same way. Two systems may both support variants, categories, and discounts, but they might implement them differently.
+#### 2) Customer data
 
-That difference creates a practical question every migration must answer:\
-Can the target platform represent your data accurately without losing meaning or changing behavior?
+Customer data represents the relationship layer of your store. Scope often includes:
 
-That question is what “data compatibility” is really about.
+* account identity and profile fields
+* segmentation or customer groups (if used for pricing or access)
+* customer status expectations (active, disabled, guest logic)
+* the experience you want customers to have after launch
 
-To learn the core patterns of why this breaks, read **Data Compatibility: What It Means and Why It Breaks**.
+Risk often comes from mismatched expectations. Some businesses only need customer contact and account continuity. Others need a specific customer experience with order visibility expectations and support workflows.
 
-### Relationships are the hidden make-or-break factor
+#### 3) Order data
 
-Even when the right records exist, the store can still feel broken if relationships do not carry over correctly.
+Order data is operational history. When order history is in scope, the question is not only “Did the orders arrive?” It is “Are they usable for the workflows we rely on?”
 
-Examples of relationships that matter:
+Order scope expectations commonly involve:
 
-* Orders linked to the right customers and products
-* Products linked to the right variants and category navigation
-* Promotions linked to the right conditions and product sets
+* line items and product relationships
+* totals, taxes, discounts, shipping, and payment context
+* the ability for staff to reference orders confidently during support
+* continuity for reporting or reconciliation, when required
 
-Many teams validate counts and miss relationship failures until after launch. This is why relationship awareness belongs in fundamentals, not in a final checklist.
+Not every store needs deep order history migrated. The right decision depends on business need, the value of historical continuity, and the validation effort required.
 
-To understand what relationships to watch, read **Entity Relationships: How Store Data Connects**.
+#### 4) Blog content
 
-#### How Next-Cart removes uncertainty in the data layer
+Blog content matters when it supports marketing, organic traffic, or long-lived evergreen pages. Blog scope often includes:
 
-Beginner teams often struggle with uncertainty: “What do we actually have, and what will it look like after migration?”
+* posts, categories or tags, and author attribution (where relevant)
+* featured images and media references
+* URL behavior expectations for priority pages
 
-Next-Cart reduces that uncertainty by creating proof points early:
+Blog migrations are rarely “hard,” but they can be strategically important if search visibility is tied to existing content.
 
-* Clarifies scope around core entities and supporting data
-* Uses mapping to preserve structure and relationships where possible
-* Supports early validation through Demo Migration results
-* Uses **Entity Points** to make scope measurable and align expectations
+### Supporting data: what often matters even when it is not the main record set
 
-**Outcome**: your data migration plan becomes clear, reviewable, and less dependent on assumptions.
+Many stores depend on supporting structure that influences outcomes:
 
-### Best practices for beginners
+* categories and navigation structure
+* attributes and filters that drive discovery
+* images and media handling
+* SEO fields and priority page behavior
+* product relationships (bundles, upsells, related items)
+* app-driven or custom fields that power critical behavior
 
-* Make a simple inventory of your store’s pillars: products, customers, orders, and content.
-* List the apps and integrations that power revenue-critical workflows. Treat them as potential complexity until proven otherwise.
-* Write down your non-negotiables. For example, “category navigation must remain intact,” or “order history must support customer service workflows.”
-* Decide what “success” means before you run anything. If success is unclear, validation becomes subjective and delayed.
+A practical mindset is to separate scope into:
 
-### Common pitfalls
+* **Core entities:** Products, Customers, Orders, Blog posts
+* **Outcome-driving structure:** the relationships and fields that make the store behave correctly
 
-* Treating the migration as a copy task rather than a representation and behavior task
-* Ignoring app-driven data until late in the project
-* Validating only totals and missing relationship issues
-* Assuming “same feature name” means “same behavior” across platforms
+This helps you avoid a common failure mode: migrating core entities successfully while losing the structure that made them useful.
+
+### The most important concept: compatibility is about representation, not transfer
+
+Most platforms can “store” similar information. The challenge is whether the target platform can represent the data in a way that preserves behavior.
+
+Compatibility questions to ask early:
+
+* Do product variants and options represent the same buying logic on the target platform?
+* Can your category and filtering structure be represented without changing discovery paths?
+* Do discounts, taxes, and order fields carry the same meaning after migration?
+* Where is behavior powered by apps or custom fields that will not transfer as expected?
+
+This is why demo-style validation is so valuable. It replaces assumptions with evidence.
+
+### How to reduce uncertainty fast
+
+If you are early in planning, the fastest risk reducer is to validate direction before committing to a full timeline.
+
+#### Build a representative sample for validation
+
+A useful sample includes:
+
+* your most complex products (not only simple items)
+* the category paths that drive revenue
+* a small set of real customer types you care about
+* a small set of real orders that represent how you operate
+* a list of SEO-critical pages that must behave predictably
+
+#### Use a Demo Migration as an evidence step
+
+A Demo Migration is most valuable when it answers:
+
+* what maps cleanly
+* what changes meaning or behavior
+* what your validation workload will look like
+
+This keeps your plan grounded in observable outcomes instead of guesses.
+
+### How scope measurement fits into planning
+
+When stakeholders disagree about scope, planning becomes unstable. A standardized scope measurement helps align expectations early.
+
+Entity Points measure migration scope using weighted counts across Products, Customers, Orders, and Blog Posts. Entity Points are consumed only when new records are migrated for the first time, while previously migrated records recorded in the system can be re-migrated without consuming additional Entity Points. This keeps planning predictable and prevents scope from being bypassed through repeated small runs.
+
+For the full model and examples, see Entity Points Explained: How Migration Scope Is Measured.
 
 ### Conclusion
 
-If you understand what your data includes, how it connects, and where compatibility breaks, you can scope and validate a shopping cart migration without guesswork.
+The biggest migration risks come from misunderstanding what store data really includes and how it connects. If you treat migration as a representation and behavior project, you will make better scope decisions, choose a safer approach, and validate outcomes with far less uncertainty.
 
-If you are still unsure what your store data will look like on the target cart, a **Demo Migration** is the fastest way to turn uncertainty into evidence.
+Run a Demo Migration early using a representative sample that includes your hardest products and your most important catalog paths. If you want a guided readout, you can provide a small sample dataset and ask Next-Cart to run the Demo Migration and share structured results, then use Live Chat to align scope and confirm the right service model for your store.
 
 ### FAQ
 
 <details>
 
-<summary><strong>Do I need technical knowledge to use this section?</strong></summary>
+<summary><strong>What data can be migrated?</strong></summary>
 
-No. This section is designed for beginners. The goal is to help you understand concepts and ask the right questions early.
+Most migrations focus on Products, Customers, Orders, and Blog Posts, plus supporting structure that affects outcomes, such as categories, attributes, images, and SEO fields, depending on platform support. The right scope is based on what must remain true for your store after launch, not only on what is easy to count.
 
 </details>
 
 <details>
 
-<summary><strong>What is the single most important thing to learn here?</strong></summary>
+<summary><strong>Can I migrate only specific data instead of everything?</strong></summary>
 
-That migrations are about relationships and behavior, not only record counts. A store can have the right number of products and still behave incorrectly.
+Yes. Many projects intentionally limit scope, especially when older data is not operationally important or when the new platform will be rebuilt with a cleaner structure. The key is to define what must remain true after launch and validate that the in-scope data behaves correctly on the target platform.
 
 </details>
 
