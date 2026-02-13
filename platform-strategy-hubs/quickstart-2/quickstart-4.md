@@ -1,25 +1,8 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Choosing the Right WooCommerce Migration Approach
 
 Choosing the right WooCommerce migration approach is primarily a **risk and capacity decision**, not a budget guess. WooCommerce projects can look simple at a glance, but plugins, custom fields, and hosting-specific behavior can change what “the same data” actually means after you move it. That is why the most reliable way to choose an approach is to combine (1) what your store depends on today and (2) what a **Demo Migration** reveals about real mapping outcomes.
 
-This page helps you pick between **Standard Migration**, **Managed Migration**, and **Custom Migration** based on evidence and business outcomes. It also shows how to use a Demo Migration as a decision trigger, which is especially valuable when your store relies on multiple plugins or meaning-critical custom fields.&#x20;
+This page helps you pick between **Standard Migration**, **Managed Migration**, and **Custom Migration** based on evidence and business outcomes. It also shows how to use a Demo Migration as a decision trigger, which is especially valuable when your store relies on multiple plugins or meaning-critical custom fields.
 
 #### What “the right approach” means for WooCommerce
 

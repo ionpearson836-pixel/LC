@@ -1,18 +1,4 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - >-
@@ -134,7 +120,7 @@ If you want a planning-only checklist that complements this page without repeati
 
 WooCommerce is a flexible target, but migration risk grows when critical store behavior is created by plugins, custom fields, order workflows, and URL decisions rather than by simple “standard catalog data”. The safest WooCommerce migrations are scoped around **meaning and behavior**: what must remain true for customers and operations after the migration, not only whether records are imported.
 
-To validate direction quickly, run a Demo Migration using a sample that includes your highest-risk products and workflows. If you prefer, you can ask Next-Cart to run the Demo Migration using your sample data and review the findings with you, then use Live Chat to align expectations and choose the right service model when WooCommerce variability makes standard mapping risky.&#x20;
+To validate direction quickly, run a Demo Migration using a sample that includes your highest-risk products and workflows. If you prefer, you can ask Next-Cart to run the Demo Migration using your sample data and review the findings with you, then use Live Chat to align expectations and choose the right service model when WooCommerce variability makes standard mapping risky.
 
 #### FAQs
 

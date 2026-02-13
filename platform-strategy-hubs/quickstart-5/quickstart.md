@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # PrestaShop Fit: Who PrestaShop is (and is not) good for
 
 PrestaShop is often chosen for flexibility and cost control, especially for stores that want customization without moving to a fully enterprise platform. “Fit” is usually determined by two practical questions:

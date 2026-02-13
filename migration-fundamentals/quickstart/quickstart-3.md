@@ -1,25 +1,11 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - >-
       https://app.gitbook.com/s/EwOn3si2UOVRL65zVOMg/getting-started/quickstart-6
 ---
 
-# Common Risks in Shopping Cart Migration
+# Common Risks in Shopping Cart Migration and How to Prevent Them
 
 Most shopping cart migrations do not fail because “data did not move.” They fail because critical business behavior changes after launch, even when record counts look correct. The safest way to reduce risk is to identify what breaks most often and prevent it through clearer scope decisions and earlier validation, not last-minute fixes.
 

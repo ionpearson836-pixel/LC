@@ -1,18 +1,4 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - https://app.gitbook.com/s/EwOn3si2UOVRL65zVOMg/troubleshoot/quickstart-1

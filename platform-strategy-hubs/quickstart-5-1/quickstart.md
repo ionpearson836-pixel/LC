@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Square Fit: Who Square is (and is not) good for
 
 Choosing Square Online as the target platform is often less about features on a checklist and more about what kind of store you are trying to operate after migration. Square tends to shine when your business wants one operational center for items, inventory, orders, and customers, especially when you sell both online and in-person.
@@ -90,6 +73,6 @@ Yes. Square Online customer accounts can support experiences like order tracking
 
 <summary><strong>How do I know if my catalog is “too complex” for a straightforward migration?</strong></summary>
 
-Complexity shows up in behavior and relationships, not totals. If product options, category navigation, discounts, or third-party app data are business-critical, validate them through a Demo Migration sample chosen for representative complexity.&#x20;
+Complexity shows up in behavior and relationships, not totals. If product options, category navigation, discounts, or third-party app data are business-critical, validate them through a Demo Migration sample chosen for representative complexity.
 
 </details>

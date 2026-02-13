@@ -1,25 +1,11 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - >-
       https://app.gitbook.com/s/EwOn3si2UOVRL65zVOMg/getting-started/quickstart-5
 ---
 
-# Migration Readiness Scorecard
+# Migration Readiness Scorecard: Is Your Business Ready to Move?
 
 A migration succeeds when scope is clear, the data is understood, and ownership is defined. This scorecard helps you assess readiness objectively and identify what to strengthen before you purchase a migration service or commit to a timeline.
 

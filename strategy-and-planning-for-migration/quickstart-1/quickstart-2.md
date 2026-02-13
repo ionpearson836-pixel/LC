@@ -1,18 +1,4 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - /broken/spaces/EwOn3si2UOVRL65zVOMg/pages/agZ0OA6Oo9SWs4pv2H67

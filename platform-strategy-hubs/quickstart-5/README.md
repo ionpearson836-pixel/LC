@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # PrestaShop Migration Hub
 
 PrestaShop is often selected for its flexibility and structured catalog model, especially when product variations are expressed through attributes and combinations. Migration planning typically focuses on preserving the buying model and ensuring that variation behavior remains clear to shoppers.

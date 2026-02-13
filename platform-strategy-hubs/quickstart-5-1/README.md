@@ -1,27 +1,10 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Square Migration Hub
 
 Square is best known for pairing **payments and point-of-sale** with a unified commerce system, then extending that system into **Square Online** for selling through an online storefront. For many sellers, Square’s biggest advantage is operational simplicity: one place to manage items, inventory, orders, customers, and fulfillment settings across channels. Square’s ecosystem also includes a built-in customer directory and customer account experiences that can support repeat purchase and order tracking.
 
 #### What Square is good at (in a migration context)
 
-* **Unified inventory across channels**, syncing Square Online with the Square catalog so quantities update as customers buy online.&#x20;
+* **Unified inventory across channels**, syncing Square Online with the Square catalog so quantities update as customers buy online.
 * **Omnichannel fulfillment options** such as pickup and local delivery (depending on setup and location).
 * **Customer directory and account experiences** that support repeat purchase and order tracking.
 * **Multiple websites under one business account**, with plan-dependent capabilities.
@@ -81,4 +64,3 @@ Square’s order cancellation and refund flows are designed around the idea that
 This is why many teams avoid canceling imported historical orders and instead treat them as reference records.
 
 </details>
-

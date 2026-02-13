@@ -1,18 +1,4 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - >-
@@ -109,7 +95,7 @@ A more reliable way to plan is to define acceptance criteria in terms of workflo
 * Can customers select variations the same way and reach the same end state?
 * Do category browsing and navigation match the customer mental model?
 * Do orders support the customer support workflows your team relies on?
-* Are SEO-critical URLs still reachable under your chosen permalink structure?&#x20;
+* Are SEO-critical URLs still reachable under your chosen permalink structure?
 
 #### Conclusion
 

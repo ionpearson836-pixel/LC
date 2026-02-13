@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Square Data Model Differences in Migration
 
 Square’s data model is designed to support unified commerce, so the target platform’s “shape” is often different from carts that were built ecommerce-first. In migration, this mostly shows up in how Square represents products and purchasable choices, how orders relate to payments, and how customer history is structured.

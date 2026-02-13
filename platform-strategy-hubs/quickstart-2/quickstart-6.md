@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Common WooCommerce Migration Pitfalls and Prevention
 
 WooCommerce migrations are rarely blocked by a single hard platform limit. The more common problem is variability: plugins can change where data lives, themes can change how customers experience the catalog, and hosting can change performance and stability outcomes.

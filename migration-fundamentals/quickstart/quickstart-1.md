@@ -1,25 +1,11 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - >-
       https://app.gitbook.com/s/EwOn3si2UOVRL65zVOMg/getting-started/quickstart-4
 ---
 
-# When Is the Right Time to Change Platform?
+# When Is the Right Time to Change Ecommerce Platforms?
 
 A platform change is usually triggered by growth constraints, operational friction, or experience limitations that you cannot solve cleanly with your current stack. But the decision becomes real when you recognize a second truth: changing platforms also means completing a shopping cart data migration that preserves continuity for products, customers, orders, and SEO-critical pages.
 

@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # PrestaShop Data Model Differences: What Changes and Why It Matters
 
 A successful PrestaShop migration is less about moving records and more about preserving meaning. In PrestaShop, meaning often depends on how product variations are modeled, how catalog discovery is structured, how multistore scope changes the definition of “the same product,” and how SEO-related URL behavior is handled.

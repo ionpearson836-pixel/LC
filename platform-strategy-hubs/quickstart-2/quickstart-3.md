@@ -1,18 +1,4 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - >-
@@ -21,7 +7,7 @@ metaLinks:
 
 # Pre-migration Preparation Checklist for WooCommerce
 
-WooCommerce migrations succeed when preparation focuses on **environment variability**: plugins, theme behavior, hosting quality, and how WordPress structures store data. WooCommerce can store almost anything, but that flexibility creates risk when store meaning is spread across extensions and custom fields rather than a single standardized platform model.&#x20;
+WooCommerce migrations succeed when preparation focuses on **environment variability**: plugins, theme behavior, hosting quality, and how WordPress structures store data. WooCommerce can store almost anything, but that flexibility creates risk when store meaning is spread across extensions and custom fields rather than a single standardized platform model.
 
 This checklist helps you prepare for a WooCommerce migration in a way that reduces surprises during mapping and validation. It is intentionally planning-only and does not include setup steps, exports, or troubleshooting.
 

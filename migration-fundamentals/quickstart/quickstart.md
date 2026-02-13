@@ -1,25 +1,11 @@
 ---
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 metaLinks:
   alternates:
     - >-
       https://app.gitbook.com/s/EwOn3si2UOVRL65zVOMg/getting-started/quickstart-3
 ---
 
-# Shopping Cart Migration 101: Definition, Goals, and Outcomes
+# What Is Shopping Cart Migration? Definition, Goals, and Outcomes
 
 Shopping cart migration is the controlled transfer of commerce data from one store system to another. It is not just copying records. It is translating one platform’s data model into another platform’s data model without breaking how the store works.
 

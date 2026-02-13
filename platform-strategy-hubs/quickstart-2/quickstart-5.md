@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # WooCommerce Validation Priorities: What to Verify Most Carefully
 
 WooCommerce validation should be **behavior-first**. Because themes and plugins influence how data is presented and how shopping flows behave, validation needs to confirm **customer and operator outcomes**, not just migrated totals.
