@@ -4,6 +4,10 @@ A shopping cart migration changes more than where your data lives. It often chan
 
 SEO continuity is not a separate project from migration. It is a continuity workstream that protects discoverability and customer paths after the cart switch by reducing avoidable losses and making the transition easier for search engines to understand.
 
+{% content-ref url="/broken/spaces/zteW5MLFV8jxtk873AqG/pages/03ujfoundeE3VI3jRqV1" %}
+[Broken link](/broken/spaces/zteW5MLFV8jxtk873AqG/pages/03ujfoundeE3VI3jRqV1)
+{% endcontent-ref %}
+
 ### What “SEO continuity” means during a cart migration
 
 In practical terms, SEO continuity means protecting three things that influence traffic and revenue during and after cutover:

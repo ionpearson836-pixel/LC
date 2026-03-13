@@ -8,40 +8,23 @@
 ## Migration Fundamentals
 
 * [Migration Foundations](migration-fundamentals/migration-foundations/README.md)
-  * [The Beginner’s Guide to Ecommerce Migration](migration-fundamentals/migration-foundations/quickstart.md)
-  * [What Is Shopping Cart Migration? Definition, Goals, and Outcomes](migration-fundamentals/migration-foundations/quickstart-1.md)
+  * [The Beginner’s Guide to Ecommerce Migration](migration-fundamentals/quickstart/README.md)
+  * [What Is Shopping Cart Migration? Definition, Goals, and Outcomes](migration-fundamentals/quickstart/quickstart.md)
 * [Migration Decision Readiness](migration-fundamentals/migration-decision-readiness/README.md)
-  * [When Is the Right Time to Start an eCommerce Data Migration?](migration-fundamentals/migration-decision-readiness/quickstart-1.md)
-  * [Migration Readiness Scorecard: Is Your Business Ready to Move?](migration-fundamentals/migration-decision-readiness/quickstart-2.md)
+  * [When Is the Right Time to Start an eCommerce Data Migration?](migration-fundamentals/quickstart/quickstart-1.md)
+  * [Migration Readiness Scorecard: Is Your Business Ready to Move?](migration-fundamentals/quickstart/quickstart-2.md)
 * [Migration Risk Awareness](migration-fundamentals/migration-risk-awareness/README.md)
-  * [Common Risks in Shopping Cart Migration and How to Prevent Them](migration-fundamentals/migration-risk-awareness/quickstart-3.md)
-* [Data Foundations](migration-fundamentals/data-foundations.md)
-* [What You Need to Understand About Data Migration](migration-fundamentals/what-you-need-to-understand-about-data-migration/README.md)
-  * [Ecommerce Data Basics: Products, Customers, Orders, and Blog Posts](migration-fundamentals/what-you-need-to-understand-about-data-migration/e-commerce-data-basics-products-customers-and-orders.md)
-  * [Data Compatibility: What It Means and Why It Breaks](migration-fundamentals/what-you-need-to-understand-about-data-migration/data-compatibility-what-it-means-and-why-it-breaks.md)
-  * [Entity Relationships: How Store Data Connects](migration-fundamentals/what-you-need-to-understand-about-data-migration/entity-relationships-how-store-data-connects.md)
+  * [Common Risks in Shopping Cart Migration and How to Prevent Them](migration-fundamentals/quickstart/quickstart-3.md)
+* [Data Foundations](migration-fundamentals/data-foundations/README.md)
+  * [What You Need to Understand About Data Migration](migration-fundamentals/data-foundations/what-you-need-to-understand-about-data-migration.md)
+  * [Ecommerce Data Basics: Products, Customers, Orders, and Blog Posts](migration-fundamentals/data-foundations/e-commerce-data-basics-products-customers-and-orders.md)
+  * [Data Compatibility: What It Means and Why It Breaks](migration-fundamentals/data-foundations/data-compatibility-what-it-means-and-why-it-breaks.md)
+  * [Entity Relationships: How Store Data Connects](migration-fundamentals/data-foundations/entity-relationships-how-store-data-connects.md)
 * [SEO and Traffic Continuity in Shopping Cart Migration](migration-fundamentals/seo-and-traffic-continuity-in-shopping-cart-migration/README.md)
   * [SEO and Traffic Continuity: What Changes During Migration](migration-fundamentals/seo-and-traffic-continuity-in-shopping-cart-migration/the-seo-migration-framework.md)
   * [The SEO Migration Framework](migration-fundamentals/seo-and-traffic-continuity-in-shopping-cart-migration/the-seo-migration-framework-1.md)
   * [URL Redirects: Why They Are Critical](migration-fundamentals/seo-and-traffic-continuity-in-shopping-cart-migration/url-redirects-101-why-they-are-critical.md)
   * [301 vs 302 Redirects](migration-fundamentals/seo-and-traffic-continuity-in-shopping-cart-migration/301-vs-302-redirects.md)
-
-## Technical Deep Dives
-
-* [Product Data Complexity in Shopping Cart Migration](technical-deep-dives/quickstart/README.md)
-  * [Variants vs Options vs Attributes: What’s the Difference?](technical-deep-dives/quickstart/variants-vs-options-vs-attributes-whats-the-difference.md)
-  * [Category Trees and Catalog Structure: Keeping Store Navigation Intact](technical-deep-dives/quickstart/category-trees-and-catalog-structure-keeping-store-navigation-intact.md)
-  * [Product Images and Media: How Visual Assets Are Handled](technical-deep-dives/quickstart/product-images-and-media-how-visual-assets-are-handled.md)
-  * [Preserving Product Reviews and Ratings](technical-deep-dives/quickstart/preserving-product-reviews-and-ratings.md)
-  * [What Makes Product Data Hard to Migrate](technical-deep-dives/quickstart/what-makes-product-data-hard-to-migrate.md)
-* [Customer and Order Intelligence](technical-deep-dives/quickstart-1/README.md)
-  * [Customer Accounts in Migration: Password Reality and Login Outcomes](technical-deep-dives/quickstart-1/quickstart.md)
-  * [Order History Preservation: Why Past Sales Data Matters](technical-deep-dives/quickstart-1/quickstart-1.md)
-  * [Taxes and Discounts in Migration: Core Concepts and Common Pitfalls](technical-deep-dives/quickstart-1/quickstart-2.md)
-* [Content and Marketing Continuity](technical-deep-dives/quickstart-2/README.md)
-  * [Blog and CMS Content: What Transfers and What Must Be Rebuilt](technical-deep-dives/quickstart-2/quickstart.md)
-  * [Promotions and Coupons: Rule Differences Across Platforms](technical-deep-dives/quickstart-2/quickstart-1.md)
-  * [SEO Metadata and On-Page Content: What Changes After Replatforming](technical-deep-dives/quickstart-2/quickstart-2.md)
 
 ## Strategy and Planning for Migration
 
@@ -53,6 +36,16 @@
   * [What to Prepare Before You Purchase a Migration Service](strategy-and-planning-for-migration/quickstart-1/quickstart.md)
   * [Data Mapping Strategy: Structuring Data for the Target Platform](strategy-and-planning-for-migration/quickstart-1/quickstart-1.md)
   * [Dirty Data Cleanup: How to Fix Common Data Quality Problems](strategy-and-planning-for-migration/quickstart-1/quickstart-2.md)
+
+## Next-Cart Migration Service
+
+* [Entity Points Explained: How Migration Scope Is Measured](next-cart-migration-service/entity-points-explained-how-migration-scope-is-measured.md)
+* [How Next-Cart Performs a Migration: Connection, Mapping, and Validation Flow](next-cart-migration-service/how-next-cart-performs-a-migration-connection-mapping-and-validation-flow.md)
+* [Demo Migration: What It Proves and How to Read Results](next-cart-migration-service/demo-migration-what-it-proves-and-how-to-read-results.md)
+* [Recent Data Migration: Final Sync Before Go-live](next-cart-migration-service/recent-data-migration-final-sync-before-go-live.md)
+* [How to Choose Next-Cart Migration Service Model](next-cart-migration-service/how-to-choose-next-cart-migration-service-model.md)
+* [When Custom Job Is Required: Common Scenarios](next-cart-migration-service/when-custom-job-is-required-common-real-world-scenarios.md)
+* [Matching Your Needs to the Right Service](next-cart-migration-service/matching-your-needs-to-the-right-service.md)
 
 ## Platform Strategy Hubs
 
@@ -115,15 +108,22 @@
   * [Common OpenCart Migration Pitfalls and Prevention](platform-strategy-hubs/quickstart-5-1-1/common-prestashop-migration-pitfalls-and-prevention.md)
 * [Page 1](platform-strategy-hubs/page-1.md)
 
-## Next-Cart Migration Service
+## Technical Deep Dives
 
-* [Entity Points Explained: How Migration Scope Is Measured](next-cart-migration-service/entity-points-explained-how-migration-scope-is-measured.md)
-* [How Next-Cart Performs a Migration: Connection, Mapping, and Validation Flow](next-cart-migration-service/how-next-cart-performs-a-migration-connection-mapping-and-validation-flow.md)
-* [Demo Migration: What It Proves and How to Read Results](next-cart-migration-service/demo-migration-what-it-proves-and-how-to-read-results.md)
-* [Recent Data Migration: Final Sync Before Go-live](next-cart-migration-service/recent-data-migration-final-sync-before-go-live.md)
-* [How to Choose Next-Cart Migration Service Model](next-cart-migration-service/how-to-choose-next-cart-migration-service-model.md)
-* [When Custom Job Is Required: Common Scenarios](next-cart-migration-service/when-custom-job-is-required-common-real-world-scenarios.md)
-* [Matching Your Needs to the Right Service](next-cart-migration-service/matching-your-needs-to-the-right-service.md)
+* [Product Data Complexity in Shopping Cart Migration](technical-deep-dives/quickstart/README.md)
+  * [Variants vs Options vs Attributes: What’s the Difference?](technical-deep-dives/quickstart/variants-vs-options-vs-attributes-whats-the-difference.md)
+  * [Category Trees and Catalog Structure: Keeping Store Navigation Intact](technical-deep-dives/quickstart/category-trees-and-catalog-structure-keeping-store-navigation-intact.md)
+  * [Product Images and Media: How Visual Assets Are Handled](technical-deep-dives/quickstart/product-images-and-media-how-visual-assets-are-handled.md)
+  * [Preserving Product Reviews and Ratings](technical-deep-dives/quickstart/preserving-product-reviews-and-ratings.md)
+  * [What Makes Product Data Hard to Migrate](technical-deep-dives/quickstart/what-makes-product-data-hard-to-migrate.md)
+* [Customer and Order Intelligence](technical-deep-dives/quickstart-1/README.md)
+  * [Customer Accounts in Migration: Password Reality and Login Outcomes](technical-deep-dives/quickstart-1/quickstart.md)
+  * [Order History Preservation: Why Past Sales Data Matters](technical-deep-dives/quickstart-1/quickstart-1.md)
+  * [Taxes and Discounts in Migration: Core Concepts and Common Pitfalls](technical-deep-dives/quickstart-1/quickstart-2.md)
+* [Content and Marketing Continuity](technical-deep-dives/quickstart-2/README.md)
+  * [Blog and CMS Content: What Transfers and What Must Be Rebuilt](technical-deep-dives/quickstart-2/quickstart.md)
+  * [Promotions and Coupons: Rule Differences Across Platforms](technical-deep-dives/quickstart-2/quickstart-1.md)
+  * [SEO Metadata and On-Page Content: What Changes After Replatforming](technical-deep-dives/quickstart-2/quickstart-2.md)
 
 ## Quality Assurance and Validation
 
